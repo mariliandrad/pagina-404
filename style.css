@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: white;
+}
+
+.titulo {
+  font-family: "Inconsolata", monospace;
+  padding: 25px 25px;
+  font-size: 14px;
+}
+
+.imagem-aviso {
+  max-width: 100%;
+  width: 500px;
+  margin-right: 80px;
+}
+
+.conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1080px;
+  margin: 35px auto;
+}
+
+.rodape {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #92e3a9;
+  padding: 10px 10px;
+}
+.rodape a {
+  text-decoration: none;
+  color: white;
+  margin: 0 30px;
+  font-size: 16px;
+}
+
+.rodape a:hover {
+  color: #256838;
+}
