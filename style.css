@@ -7,6 +7,8 @@
 body {
   font-family: "Space Mono", monospace;
   background-color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .titulo {
@@ -29,11 +31,15 @@ body {
   margin: 35px auto;
 }
 
-.rodape {
-  position: fixed;
-  bottom: 0;
-  left: 0;
+.conteudo section {
   width: 100%;
+}
+
+.conteudo h2 {
+  margin: 25px 0;
+}
+
+.rodape {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -41,12 +47,66 @@ body {
   padding: 10px 10px;
 }
 .rodape a {
+  font-family: "Inconsolata", monospace;
   text-decoration: none;
   color: white;
   margin: 0 30px;
   font-size: 16px;
+  transition: 0.3s;
 }
 
 .rodape a:hover {
   color: #256838;
+}
+
+.botao {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  background-color: white;
+  border: 2px solid #92e3a9;
+  color: #92e3a9;
+  transition: 0.3s;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.botao:hover {
+  background-color: #256838;
+  border-color: #256838;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .conteudo {
+    display: flex;
+    flex-direction: column;
+    margin: 0 25px;
+  }
+  .imagem-aviso {
+    max-width: 500px;
+    width: 100%;
+    margin: 0;
+  }
+  h2 {
+    font-size: 22px;
+    margin: 15px 0;
+  }
+  p {
+    font-size: 15px;
+  }
+  .rodape {
+    flex-direction: column;
+    margin-top: 25px;
+  }
+  .rodape a {
+    padding: 5px 0;
+  }
+  .botao {
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+  }
 }
